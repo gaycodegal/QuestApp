@@ -1,0 +1,4 @@
+#head
+version:1
+baseurl:http://centripetalelement.altervista.org/dungeon
+#end

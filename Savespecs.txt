@@ -1,0 +1,8 @@
+specs:
+
+1: 8 bits: file format version number
+2: 8 bits: tile range bits
+3: 16 bits: room width bits
+4: 16 bits: room height bits
+5: 8 bits: bits to save health
+6: 8 bits: bits to save xp

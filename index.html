@@ -1,0 +1,135 @@
+<html>
+
+<head>
+	<!--, minimum-scale=1, maximum-scale=1, user-scalable=no-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+	<style>
+		body {
+			font-family: monospace;
+			margin: 0px;
+		}
+		
+		#game {
+			z-index: -1;
+			height: 100%;
+			width: 100%;
+		}
+		
+		.ready {
+			width: 280px;
+			height: 120px;
+			color: #000000;
+			background-color: #ffffff;
+			position: absolute;
+			left: 50%;
+			margin-left: -165px;
+			top: 50%;
+			margin-top: -85px;
+			border: 25px solid;
+			border-radius: 25px;
+			border-color: #ffffff;
+			text-align: center;
+			font-size: 24px;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			cursor: default;
+		}
+		
+		.ok {
+			color: #4285f4;
+			width: 100%;
+			cursor: pointer;
+		}
+		
+		.SCORE {
+			position: absolute;
+			color: #ffffff;
+			text-align: right;
+			top: 100%;
+			left: 10%;
+			margin-top: -3em;
+			font-size: 1em;
+			height: 1em;
+			width: 90%;
+		}
+		
+		.gametext {
+			position: absolute;
+			top: 0px;
+			left: 50%;
+			margin-left: -160px;
+			width: 320px;
+			height: 16px;
+			color: #ffffff;
+			background-color: rgba(0, 0, 0, .3);
+			text-align: center;
+			font-size: 16px;
+		}
+		
+		.COIN {
+			position: absolute;
+			color: #ffffff;
+			text-align: right;
+			top: 100%;
+			left: 10%;
+			margin-top: -2em;
+			font-size: 1em;
+			height: 1em;
+			width: 90%;
+		}
+		
+		.console-container {
+			position: absolute;
+			width: 100%;
+			min-height: 100%;
+			background-color: #ffffff;
+			top: 0;
+			left: 0;
+		}
+		
+		.console-button {
+			background-color: #ccc;
+			text-align: center;
+		}
+		
+		.console-textarea {
+			background-color: #fff;
+			text-align: left;
+			width: 100%;
+			height: 50%;
+		}
+		
+		.console-log {
+			background-color: #fff;
+			text-align: left;
+			width: 100%;
+			min-height: 10%;
+		}
+	</style>
+	<div id="game"></div>
+	<script src="./js/buzzmin.js"></script>
+	<script src="./js/functional.js"></script>
+	<script src="./js/util.js"></script>
+	<script src="./js/astar.js"></script>
+	<script src="./js/HPXP.js"></script>
+	<script src="./js/Monster.js"></script>
+	<script src="./js/inventory.js"></script>
+	<script src="./js/tween.js"></script>
+	<script src="./js/arthandler.js"></script>
+	<script src="./js/saving.js"></script>
+	<script src="./js/gameEngine.js"></script>
+	<script src="./js/roomFeatures.js"></script>
+	<script src="./js/displays.js"></script>
+	<script src="./js/game.js"></script>
+	<script src="./js/roomAppenders.js"></script>
+	<script src="./js/bindings.js"></script>
+</body>
+
+</html>
