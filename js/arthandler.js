@@ -1,3 +1,4 @@
+
 //Art sets for the dungeon
 var dungeonArt = {
     blue: {

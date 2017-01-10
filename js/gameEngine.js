@@ -1,8 +1,7 @@
 /*
 
-Tonna shit here
+Tonna stuff here
 */
-
 var autocontinue = true;
 
 /*
@@ -508,6 +507,7 @@ var GameEngine = {
   oy: 0,
   alreadyLaunched: false,
   launch: function (opts) {
+
     var options = {
       bgColor: "black",
       types: [],
@@ -564,6 +564,7 @@ var GameEngine = {
     }
   },
   resize: function () {
+
     var ow = GameEngine.width;
     var oh = GameEngine.height;
     GameEngine.width = window.innerWidth;
@@ -582,11 +583,15 @@ var GameEngine = {
 
     for (var c in GameEngine.canvases) {
       var mt = 1;
-      if (GameEngine.IS_HIGH_DEF) mt = 2;
+      console.log("HI", GameEngine.canvases[c].canvas);
+
+      if (GameEngine.IS_HIGH_DEF) 
+        mt = 2;
       GameEngine.canvases[c].canvas.width = "" + GameEngine.width * mt;
       GameEngine.canvases[c].canvas.height = "" + GameEngine.height * mt;
-      GameEngine.canvases[c].canvas.style.width = GameEngine.width
-      GameEngine.canvases[c].canvas.style.height = GameEngine.height
+      GameEngine.canvases[c].canvas.style.width = GameEngine.width + "px";
+      GameEngine.canvases[c].canvas.style.height = GameEngine.height + "px";
+
       if (GameEngine.IS_HIGH_DEF) GameEngine.canvases[c].ctx.scale(2, 2);
       GameEngine.canvases[c].ctx.imageSmoothingEnabled = GameEngine.options.smooth;
       GameEngine.canvases[c].ctx.mozImageSmoothingEnabled = GameEngine.options.smooth;
@@ -867,8 +872,8 @@ function CanvasLayer(engine, opts) {
   if (engine.IS_HIGH_DEF) mt = 2;
   canvas.width = "" + engine.width * mt;
   canvas.height = "" + engine.height * mt;
-  canvas.style.width = engine.width;
-  canvas.style.height = engine.height;
+  canvas.style.width = engine.width + "px";
+  canvas.style.height = engine.height + "px";
   this.ctx = canvas.getContext("2d");
   if (engine.IS_HIGH_DEF) this.ctx.scale(2, 2);
   this.ctx.imageSmoothingEnabled = GameEngine.options.smooth;
